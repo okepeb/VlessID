@@ -393,7 +393,7 @@ export default {
         }
       }
 
-      const targetReverseProxy = env.REVERSE_PROXY_TARGET || "vlessid.workers.dev/sub";
+      const targetReverseProxy = env.REVERSE_PROXY_TARGET || "vlessid.pages.dev/sub";
       return await reverseProxy(request, targetReverseProxy);
     } catch (err) {
       return new Response(`An error occurred: ${err.toString()}`, {
