@@ -9,41 +9,41 @@ enabled = true
 enabled = true
 
 [[routes]]
-pattern = "okepeb.web.id"
+pattern = "vlessid.okepeb.web.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.okepeb.web.id"
+pattern = "ava.game.naver.com.vlessid.okepeb.web.id"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.okepeb.web.id"
+pattern = "graph.instagram.com.vlessid.okepeb.web.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.okepeb.web.id"
+pattern = "quiz.int.vidio.com.vlessid.okepeb.web.id"
 custom_domain = true
 [[routes]]
-pattern = "live.iflix.com.vcip.ndeso.web.id"
+pattern = "live.iflix.com.vcip.vlessid.okepeb.web.id"
 custom_domain = true
 [[routes]]
-pattern = "support.zoom.us.okepeb.web.id"
+pattern = "support.zoom.us.vlessid.okepeb.web.id"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.okepeb.web.id"
+pattern = "blog.webex.com.vlessid.okepeb.web.id"
 custom_domain = true
 [[routes]]
-pattern = "investors.spotify.com.okepeb.web.id"
+pattern = "investors.spotify.com.vlessid.okepeb.web.id"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.okepeb.web.id"
+pattern = "cache.netflix.com.vlessid.okepeb.web.id"
 custom_domain = true
 [[routes]]
-pattern = "zaintest.vuclip.com.okepeb.web.id"
+pattern = "zaintest.vuclip.com.vlessid.okepeb.web.id"
 custom_domain = true
 [[routes]]
-pattern = "io.ruangguru.com.okepeb.web.id"
+pattern = "io.ruangguru.com.vlessid.okepeb.web.id"
 custom_domain = true
 [[routes]]
-pattern = "business.blibli.com.okepeb.web.id"
+pattern = "business.blibli.com.vlessid.okepeb.web.id"
 custom_domain = true
 [[routes]]
-pattern = "api.midtrans.com.okepeb.web.id"
+pattern = "api.midtrans.com.vlessid.okepeb.web.id"
 custom_domain = true
