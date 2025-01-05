@@ -15,12 +15,12 @@ let cachedProxyList = [];
 const APP_DOMAIN = `${serviceName}.${rootDomain}`;
 const PORTS = [443, 80];
 const PROTOCOLS = ["trojan", "vless", "ss"];
-const KV_PROXY_URL = "https://raw.githubusercontent.com/FoolVPN-ID/Nautica/refs/heads/main/kvProxyList.json";
-const PROXY_BANK_URL = "https://raw.githubusercontent.com/FoolVPN-ID/Nautica/refs/heads/main/proxyList.txt";
+const KV_PROXY_URL = "https://raw.githubusercontent.com/FoolVPN-ID/Free Tool V2ray/refs/heads/main/kvProxyList.json";
+const PROXY_BANK_URL = "https://raw.githubusercontent.com/FoolVPN-ID/Free Tool V2ray/refs/heads/main/proxyList.txt";
 const DNS_SERVER_ADDRESS = "8.8.8.8";
 const DNS_SERVER_PORT = 53;
 const PROXY_HEALTH_CHECK_API = "https://id1.foolvpn.me/api/v1/check";
-const CONVERTER_URL = "https://nautica-tool.azurewebsites.net/api/v1/convert";
+const CONVERTER_URL = "https://Free Tool V2ray-tool.azurewebsites.net/api/v1/convert";
 const DONATE_LINK = "https://trakteer.id/dickymuliafiqri/tip";
 const PROXY_PER_PAGE = 24;
 const WS_READY_STATE_OPEN = 1;
@@ -114,7 +114,7 @@ function getAllConfig(request, hostName, proxyList, page = 0) {
 
     // Build HTML
     const document = new Document(request);
-    document.setTitle("Welcome to <span class='text-blue-500 font-semibold'>Nautica</span>");
+    document.setTitle("Welcome to <span class='text-blue-500 font-semibold'>Free Tool V2ray</span>");
     document.addInfo(`Total: ${proxyList.length}`);
     document.addInfo(`Page: ${page}/${Math.floor(proxyList.length / PROXY_PER_PAGE)}`);
 
@@ -193,12 +193,12 @@ export default {
           // Contoh: /ID, /SG, dll
           const proxyKeys = url.pathname.replace("/", "").toUpperCase().split(",");
           const proxyKey = proxyKeys[Math.floor(Math.random() * proxyKeys.length)];
-          let kvProxy = await env.nautica.get("kvProxy");
+          let kvProxy = await env.Free Tool V2ray.get("kvProxy");
           if (kvProxy) {
             kvProxy = JSON.parse(kvProxy);
           } else {
             kvProxy = await getKVProxyList();
-            env.nautica.put("kvProxy", JSON.stringify(kvProxy), {
+            env.Free Tool V2ray.put("kvProxy", JSON.stringify(kvProxy), {
               expirationTtl: 3600,
             });
           }
@@ -1465,7 +1465,7 @@ let baseHTML = `
           if (containerRegionCheck == undefined) break;
 
           const res = fetch(
-            "https://nautica-tool.azurewebsites.net/api/v1/regioncheck?config=" + encodeURIComponent(configSample)
+            "https://Free Tool V2ray-tool.azurewebsites.net/api/v1/regioncheck?config=" + encodeURIComponent(configSample)
           ).then(async (res) => {
             if (res.status == 200) {
               containerRegionCheck.innerHTML = "<hr>";
