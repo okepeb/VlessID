@@ -7,3 +7,43 @@ enabled = true
 
 [observability.logs]
 enabled = true
+
+[[routes]]
+pattern = "okepeb.web.id"
+custom_domain = true
+[[routes]]
+pattern = "ava.game.naver.com.okepeb.web.id"
+custom_domain = true
+[[routes]]
+pattern = "graph.instagram.com.okepeb.web.id"
+custom_domain = true
+[[routes]]
+pattern = "quiz.int.vidio.com.okepeb.web.id"
+custom_domain = true
+[[routes]]
+pattern = "live.iflix.com.vcip.ndeso.web.id"
+custom_domain = true
+[[routes]]
+pattern = "support.zoom.us.okepeb.web.id"
+custom_domain = true
+[[routes]]
+pattern = "blog.webex.com.okepeb.web.id"
+custom_domain = true
+[[routes]]
+pattern = "investors.spotify.com.okepeb.web.id"
+custom_domain = true
+[[routes]]
+pattern = "cache.netflix.com.okepeb.web.id"
+custom_domain = true
+[[routes]]
+pattern = "zaintest.vuclip.com.okepeb.web.id"
+custom_domain = true
+[[routes]]
+pattern = "io.ruangguru.com.okepeb.web.id"
+custom_domain = true
+[[routes]]
+pattern = "business.blibli.com.okepeb.web.id"
+custom_domain = true
+[[routes]]
+pattern = "api.midtrans.com.okepeb.web.id"
+custom_domain = true
